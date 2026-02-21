@@ -38,14 +38,17 @@ const Navbar = ({ currentSection, setSection }: { currentSection: Section, setSe
           <div className="flex-shrink-0 flex items-center">
             <button
               onClick={() => setSection('strategy')}
-              className="flex flex-col items-center sm:items-start group text-left"
+              className="flex items-center gap-3 group text-left"
             >
-              <span className="font-display text-2xl font-bold text-primary tracking-tight">
-                Kalavya<span className="text-secondary">.Co</span>
-              </span>
-              <span className="text-[0.6rem] uppercase tracking-[0.2em] text-primary/60 font-subheading">
-                Brand Guidelines
-              </span>
+              <LogoIcon className="h-8 w-auto text-primary" />
+              <div className="flex flex-col items-start pt-1">
+                <span className="font-display text-2xl font-bold text-primary tracking-tight leading-none mb-1">
+                  Kalavya<span className="text-secondary">.Co</span>
+                </span>
+                <span className="text-[0.6rem] uppercase tracking-[0.2em] text-primary/60 font-subheading leading-none">
+                  Brand Guidelines
+                </span>
+              </div>
             </button>
           </div>
 
@@ -257,21 +260,37 @@ const LogoSystemView = () => (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         <div className="lg:col-span-1">
-          <h2 className="text-2xl font-display font-bold text-primary mb-4">Primary Lockup</h2>
+          <h2 className="text-2xl font-display font-bold text-primary mb-4">Logo Lockups</h2>
           <p className="text-primary/70 mb-6 leading-relaxed">
-            Our primary logo combines the Mithila Elephant icon with the Kalavya.Co wordmark. The elephant symbolizes wisdom and prosperity in Mithila culture, while the serif typography grounds the brand in sophistication.
+            Our logo system offers flexibility to maintain legibility and balance. The combinations of the Mithila Elephant icon and the Kalavya.Co wordmark are formulated for specific spatial needs while conveying wisdom and sophistication.
           </p>
           <div className="bg-primary/5 p-4 rounded border border-primary/10 text-sm">
             <strong className="block text-primary mb-2">Usage Note:</strong>
-            This version should be used in most applications where space allows. Ensure high contrast against the background.
+            Use Lockup 01 for horizontal spaces. Use Lockup 02 for prominent displays, observing the tight spacing and gap between the logo icon and text.
           </div>
         </div>
-        <div className="lg:col-span-2 bg-white rounded-lg shadow-sm border border-primary/10 flex items-center justify-center p-16 min-h-[400px]">
-          <div className="flex flex-col items-center gap-6">
-            <LogoIcon className="h-[10em] w-auto text-primary" />
-            <span className="font-display text-5xl font-bold text-primary tracking-tight">
-              Kalavya<span className="text-secondary">.Co</span>
-            </span>
+        <div className="lg:col-span-2 flex flex-col gap-6">
+          <div className="bg-white rounded-lg shadow-sm border border-primary/10 p-10 relative">
+            <span className="absolute top-4 left-4 text-xs font-mono font-bold text-secondary uppercase tracking-widest bg-secondary/10 px-2 py-1 rounded">01. Horizontal Lockup</span>
+            <div className="flex items-center justify-center min-h-[160px]">
+              <div className="flex items-center gap-5">
+                <LogoIcon className="h-14 w-auto text-primary" />
+                <span className="font-display text-4xl font-bold text-primary tracking-tight leading-none mt-2">
+                  Kalavya<span className="text-secondary">.Co</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white rounded-lg shadow-sm border border-primary/10 p-10 relative">
+            <span className="absolute top-4 left-4 text-xs font-mono font-bold text-secondary uppercase tracking-widest bg-secondary/10 px-2 py-1 rounded">02. Vertical Lockup</span>
+            <div className="flex items-center justify-center min-h-[260px]">
+              <div className="flex flex-col items-center gap-3">
+                <LogoIcon className="h-[8em] w-auto text-primary" />
+                <span className="font-display text-5xl font-bold text-primary tracking-tight">
+                  Kalavya<span className="text-secondary">.Co</span>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -517,13 +536,16 @@ const Footer = () => (
   <footer className="bg-surface-light border-t border-primary/10 pt-16 pb-8">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col md:flex-row justify-between items-center">
-        <div className="mb-4 md:mb-0">
-          <span className="font-display text-2xl font-bold text-primary tracking-tight">
-            Kalavya<span className="text-secondary">.Co</span>
-          </span>
-          <p className="text-xs text-primary/50 mt-1 uppercase tracking-widest font-subheading">
-            Internal Brand Document
-          </p>
+        <div className="flex items-center gap-3 mb-4 md:mb-0">
+          <LogoIcon className="h-8 w-auto text-primary opacity-80" />
+          <div className="flex flex-col items-start pt-1">
+            <span className="font-display text-2xl font-bold text-primary tracking-tight leading-none mb-1">
+              Kalavya<span className="text-secondary">.Co</span>
+            </span>
+            <p className="text-xs text-primary/50 uppercase tracking-widest font-subheading leading-none">
+              Internal Brand Document
+            </p>
+          </div>
         </div>
         <div className="text-center md:text-right">
           <p className="text-sm text-primary/70 font-body">© 2023 Kalavya.Co. Confidential.</p>
