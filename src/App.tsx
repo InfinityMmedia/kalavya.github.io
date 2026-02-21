@@ -18,7 +18,7 @@ import {
 
 // --- Types ---
 
-type Section = 'strategy' | 'logo' | 'typography';
+type Section = 'strategy' | 'logo' | 'typography' | 'mockups';
 
 // --- Components ---
 
@@ -29,6 +29,7 @@ const Navbar = ({ currentSection, setSection }: { currentSection: Section, setSe
     { id: 'strategy', label: 'Strategy' },
     { id: 'logo', label: 'Logo System' },
     { id: 'typography', label: 'Typography & Imagery' },
+    { id: 'mockups', label: 'Mockups' },
   ];
 
   return (
@@ -511,6 +512,68 @@ const DontCard = ({ children, label, className = "bg-gray-100" }: { children: Re
   </div>
 );
 
+const MockupsView = () => (
+  <motion.div
+    initial={{ opacity: 0, scale: 0.98 }}
+    animate={{ opacity: 1, scale: 1 }}
+    exit={{ opacity: 0, scale: 1.02 }}
+    className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+  >
+    <div className="mb-16 border-b border-primary/10 pb-8">
+      <div className="flex items-center space-x-2 mb-4">
+        <span className="h-px w-8 bg-secondary"></span>
+        <span className="text-secondary font-medium tracking-widest uppercase text-xs">Section 04</span>
+      </div>
+      <h1 className="text-4xl sm:text-5xl font-display font-bold text-primary mb-4">Design Mockups</h1>
+      <p className="text-lg text-primary/70 font-body max-w-3xl">
+        A glimpse into how the Kalavya.Co brand identity translates across various physical and digital touchpoints, from packaging and stationery to digital experiences.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+      <MockupCard
+        src="https://images.unsplash.com/photo-1616423640778-28d1b53229bd?q=80&w=1500&auto=format&fit=crop"
+        title="Brand Stationery"
+        desc="Business cards, letterheads, and envelopes utilizing the primary heritage cream and deep umber palette."
+      />
+      <MockupCard
+        src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?q=80&w=1500&auto=format&fit=crop"
+        title="Sustainable Packaging"
+        desc="Eco-friendly packaging featuring geometric Mithila patterns and the minimalist horizontal logo lockup."
+      />
+      <MockupCard
+        src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1500&auto=format&fit=crop"
+        title="Digital Experience"
+        desc="Mobile commerce interface highlighting the artisanal collection with clean typography and ample whitespace."
+      />
+      <MockupCard
+        src="https://images.unsplash.com/photo-1563203369-26f2e4a5ccf7?q=80&w=1500&auto=format&fit=crop"
+        title="Retail Signage"
+        desc="In-store promotional materials and tags using the slate teal accent color to draw attention."
+      />
+    </div>
+  </motion.div>
+);
+
+const MockupCard = ({ src, title, desc }: { src: string, title: string, desc: string }) => (
+  <div className="group cursor-pointer">
+    <div className="overflow-hidden rounded-lg bg-surface-light mb-6 aspect-[4/3] shadow-sm group-hover:shadow-md transition-shadow">
+      <img
+        src={src}
+        alt={title}
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        loading="lazy"
+        referrerPolicy="no-referrer"
+      />
+    </div>
+    <div className="flex items-center justify-between mb-2">
+      <h3 className="font-display text-2xl font-bold text-primary">{title}</h3>
+      <ArrowRight className="text-secondary opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" size={20} />
+    </div>
+    <p className="text-primary/70 font-body leading-relaxed">{desc}</p>
+  </div>
+);
+
 const Footer = () => (
   <footer className="bg-surface-light border-t border-primary/10 pt-16 pb-8">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -543,6 +606,7 @@ export default function App() {
           {section === 'strategy' && <StrategyView key="strategy" />}
           {section === 'logo' && <LogoSystemView key="logo" />}
           {section === 'typography' && <TypographyImageryView key="typography" />}
+          {section === 'mockups' && <MockupsView key="mockups" />}
         </AnimatePresence>
       </main>
 
