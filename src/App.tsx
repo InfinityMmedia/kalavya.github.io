@@ -258,7 +258,7 @@ const LogoSystemView = () => (
           </p>
           <div className="bg-primary/5 p-4 rounded border border-primary/10 text-sm">
             <strong className="block text-primary mb-2">Usage Note:</strong>
-            Use Lockup 01 or 02 for horizontal spaces to give the brand more prominence. Use Lockup 03 for prominent vertical displays, observing the tight spacing and gap between the logo icon and text.
+            Use Lockup 01 or 02 for horizontal spaces to give the brand more prominence. Ensure consistent padding and horizontal alignment when placing them in headers or footers.
           </div>
         </div>
         <div className="lg:col-span-2 flex flex-col gap-10">
@@ -272,12 +272,6 @@ const LogoSystemView = () => (
             <span className="absolute top-4 left-4 text-xs font-mono font-bold text-secondary uppercase tracking-widest bg-secondary/10 px-2 py-1 rounded">02. Secondary Horizontal</span>
             <div className="flex items-center justify-center min-h-[220px] w-full mt-6">
               <img src="/side 2.png" alt="Secondary Horizontal Lockup" className="max-w-full h-auto max-h-[160px] object-contain" />
-            </div>
-          </div>
-          <div className="bg-white rounded-lg shadow-sm border border-primary/10 p-12 relative flex-1">
-            <span className="absolute top-4 left-4 text-xs font-mono font-bold text-secondary uppercase tracking-widest bg-secondary/10 px-2 py-1 rounded">03. Vertical Lockup</span>
-            <div className="flex items-center justify-center min-h-[300px] w-full mt-6">
-              <img src="/top.png" alt="Vertical Logo Lockup" className="max-w-full h-auto max-h-[240px] object-contain" />
             </div>
           </div>
         </div>
@@ -299,7 +293,7 @@ const LogoSystemView = () => (
               <div className="absolute -right-8 bottom-0 h-8 w-8 flex items-center justify-center border-r border-b border-secondary text-xs font-mono text-secondary">x</div>
               <div className="absolute -bottom-8 right-0 h-8 w-8 flex items-center justify-center border-r border-b border-secondary text-xs font-mono text-secondary">x</div>
               <div className="flex items-center justify-center w-full max-w-[200px]">
-                <img src="/top.png" alt="Clear Space Lockup Minimal" className="w-full h-auto object-contain" />
+                <img src="/side.png" alt="Clear Space Lockup Minimal" className="w-full h-auto object-contain" />
               </div>
             </div>
             <div className="absolute bottom-4 right-4 text-xs font-mono text-gray-400">x = height of 'K'</div>
@@ -326,7 +320,7 @@ const LogoSystemView = () => (
                 <p className="text-xs text-gray-500">30mm width minimum</p>
               </div>
               <div className="w-[113px] bg-gray-50 p-3 border border-dashed border-gray-300 flex items-center justify-center">
-                <img src="/top.png" alt="Minimal Print Logo" className="w-full object-contain" />
+                <img src="/side 2.png" alt="Minimal Print Logo" className="w-full object-contain" />
               </div>
             </div>
           </div>
