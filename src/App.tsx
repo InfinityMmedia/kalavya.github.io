@@ -38,17 +38,9 @@ const Navbar = ({ currentSection, setSection }: { currentSection: Section, setSe
           <div className="flex-shrink-0 flex items-center">
             <button
               onClick={() => setSection('strategy')}
-              className="flex items-center gap-3 group text-left"
+              className="flex items-center gap-4 group text-left"
             >
-              <LogoIcon className="h-8 w-auto text-primary" />
-              <div className="flex flex-col items-start pt-1">
-                <span className="font-display text-2xl font-bold text-primary tracking-tight leading-none mb-1">
-                  Kalavya<span className="text-secondary">.Co</span>
-                </span>
-                <span className="text-[0.6rem] uppercase tracking-[0.2em] text-primary/60 font-subheading leading-none">
-                  Brand Guidelines
-                </span>
-              </div>
+              <img src="/side.png" className="h-12 w-auto object-contain" alt="Kalavya.Co Logo" />
             </button>
           </div>
 
@@ -266,30 +258,26 @@ const LogoSystemView = () => (
           </p>
           <div className="bg-primary/5 p-4 rounded border border-primary/10 text-sm">
             <strong className="block text-primary mb-2">Usage Note:</strong>
-            Use Lockup 01 for horizontal spaces. Use Lockup 02 for prominent displays, observing the tight spacing and gap between the logo icon and text.
+            Use Lockup 01 or 02 for horizontal spaces to give the brand more prominence. Use Lockup 03 for prominent vertical displays, observing the tight spacing and gap between the logo icon and text.
           </div>
         </div>
-        <div className="lg:col-span-2 flex flex-col gap-6">
-          <div className="bg-white rounded-lg shadow-sm border border-primary/10 p-10 relative">
-            <span className="absolute top-4 left-4 text-xs font-mono font-bold text-secondary uppercase tracking-widest bg-secondary/10 px-2 py-1 rounded">01. Horizontal Lockup</span>
-            <div className="flex items-center justify-center min-h-[160px]">
-              <div className="flex items-center gap-5">
-                <LogoIcon className="h-14 w-auto text-primary" />
-                <span className="font-display text-4xl font-bold text-primary tracking-tight leading-none mt-2">
-                  Kalavya<span className="text-secondary">.Co</span>
-                </span>
-              </div>
+        <div className="lg:col-span-2 flex flex-col gap-10">
+          <div className="bg-white rounded-lg shadow-sm border border-primary/10 p-12 relative flex-1">
+            <span className="absolute top-4 left-4 text-xs font-mono font-bold text-secondary uppercase tracking-widest bg-secondary/10 px-2 py-1 rounded">01. Primary Horizontal</span>
+            <div className="flex items-center justify-center min-h-[220px] w-full mt-6">
+              <img src="/side.png" alt="Horizontal Logo Lockup" className="max-w-full h-auto max-h-[160px] object-contain" />
             </div>
           </div>
-          <div className="bg-white rounded-lg shadow-sm border border-primary/10 p-10 relative">
-            <span className="absolute top-4 left-4 text-xs font-mono font-bold text-secondary uppercase tracking-widest bg-secondary/10 px-2 py-1 rounded">02. Vertical Lockup</span>
-            <div className="flex items-center justify-center min-h-[260px]">
-              <div className="flex flex-col items-center gap-3">
-                <LogoIcon className="h-[8em] w-auto text-primary" />
-                <span className="font-display text-5xl font-bold text-primary tracking-tight">
-                  Kalavya<span className="text-secondary">.Co</span>
-                </span>
-              </div>
+          <div className="bg-white rounded-lg shadow-sm border border-primary/10 p-12 relative flex-1">
+            <span className="absolute top-4 left-4 text-xs font-mono font-bold text-secondary uppercase tracking-widest bg-secondary/10 px-2 py-1 rounded">02. Secondary Horizontal</span>
+            <div className="flex items-center justify-center min-h-[220px] w-full mt-6">
+              <img src="/side 2.png" alt="Secondary Horizontal Lockup" className="max-w-full h-auto max-h-[160px] object-contain" />
+            </div>
+          </div>
+          <div className="bg-white rounded-lg shadow-sm border border-primary/10 p-12 relative flex-1">
+            <span className="absolute top-4 left-4 text-xs font-mono font-bold text-secondary uppercase tracking-widest bg-secondary/10 px-2 py-1 rounded">03. Vertical Lockup</span>
+            <div className="flex items-center justify-center min-h-[300px] w-full mt-6">
+              <img src="/top.png" alt="Vertical Logo Lockup" className="max-w-full h-auto max-h-[240px] object-contain" />
             </div>
           </div>
         </div>
@@ -310,9 +298,8 @@ const LogoSystemView = () => (
               <div className="absolute -left-8 top-0 h-8 w-8 flex items-center justify-center border-l border-t border-secondary text-xs font-mono text-secondary">x</div>
               <div className="absolute -right-8 bottom-0 h-8 w-8 flex items-center justify-center border-r border-b border-secondary text-xs font-mono text-secondary">x</div>
               <div className="absolute -bottom-8 right-0 h-8 w-8 flex items-center justify-center border-r border-b border-secondary text-xs font-mono text-secondary">x</div>
-              <div className="flex flex-col items-center gap-3">
-                <LogoIcon className="h-[10em] w-auto text-primary" />
-                <span className="font-display text-2xl font-bold text-primary tracking-tight">Kalavya<span className="text-secondary">.Co</span></span>
+              <div className="flex items-center justify-center w-full max-w-[200px]">
+                <img src="/top.png" alt="Clear Space Lockup Minimal" className="w-full h-auto object-contain" />
               </div>
             </div>
             <div className="absolute bottom-4 right-4 text-xs font-mono text-gray-400">x = height of 'K'</div>
@@ -329,9 +316,8 @@ const LogoSystemView = () => (
                 <h3 className="text-sm font-bold uppercase tracking-wider text-secondary mb-1">Digital</h3>
                 <p className="text-xs text-gray-500">120px width minimum</p>
               </div>
-              <div className="w-[120px] bg-gray-50 p-2 border border-dashed border-gray-300 flex flex-col items-center justify-center gap-1">
-                <LogoIcon className="max-w-full h-auto object-contain text-primary" />
-                <span className="font-display text-[10px] leading-none font-bold text-primary">Kalavya.Co</span>
+              <div className="w-[120px] bg-gray-50 p-3 border border-dashed border-gray-300 flex items-center justify-center">
+                <img src="/side.png" alt="Minimal Digital Logo" className="w-full object-contain" />
               </div>
             </div>
             <div className="flex items-center justify-between">
@@ -339,9 +325,8 @@ const LogoSystemView = () => (
                 <h3 className="text-sm font-bold uppercase tracking-wider text-secondary mb-1">Print</h3>
                 <p className="text-xs text-gray-500">30mm width minimum</p>
               </div>
-              <div className="w-[113px] bg-gray-50 p-2 border border-dashed border-gray-300 flex flex-col items-center justify-center gap-1">
-                <LogoIcon className="max-w-full h-auto object-contain text-primary" />
-                <span className="font-display text-[10px] leading-none font-bold text-primary">Kalavya.Co</span>
+              <div className="w-[113px] bg-gray-50 p-3 border border-dashed border-gray-300 flex items-center justify-center">
+                <img src="/top.png" alt="Minimal Print Logo" className="w-full object-contain" />
               </div>
             </div>
           </div>
@@ -536,16 +521,12 @@ const Footer = () => (
   <footer className="bg-surface-light border-t border-primary/10 pt-16 pb-8">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col md:flex-row justify-between items-center">
-        <div className="flex items-center gap-3 mb-4 md:mb-0">
-          <LogoIcon className="h-8 w-auto text-primary opacity-80" />
-          <div className="flex flex-col items-start pt-1">
-            <span className="font-display text-2xl font-bold text-primary tracking-tight leading-none mb-1">
-              Kalavya<span className="text-secondary">.Co</span>
-            </span>
-            <p className="text-xs text-primary/50 uppercase tracking-widest font-subheading leading-none">
-              Internal Brand Document
-            </p>
-          </div>
+        <div className="flex items-center gap-4 mb-4 md:mb-0">
+          <img src="/side.png" className="h-10 w-auto object-contain opacity-80" alt="Kalavya.Co Footer Logo" />
+          <div className="h-8 w-px bg-primary/20 hidden sm:block"></div>
+          <p className="text-xs text-primary/50 uppercase tracking-widest font-subheading leading-none hidden sm:block">
+            Internal Brand Document
+          </p>
         </div>
         <div className="text-center md:text-right">
           <p className="text-sm text-primary/70 font-body">© 2023 Kalavya.Co. Confidential.</p>
