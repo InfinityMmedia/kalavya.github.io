@@ -536,28 +536,28 @@ const MockupsView = () => (
         title="Mobile Interface"
         desc="Digital experience on mobile devices highlighting the artisanal collection with clean typography and ample whitespace."
         overlayImage="/side.png"
-        overlayClassName="w-1/4 -mt-44 object-contain z-10 drop-shadow-md"
+        overlayClassName="w-[28%] top-[35%] left-[50%] -translate-x-1/2 -translate-y-1/2 object-contain z-10 drop-shadow-md"
       />
       <MockupCard
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIRkryHmBNKpYQR7PcY8ntJFb78F8pQGuETI0sT_15GJWkV4RmArSHGOdiQd_VMXEbzSdfKI1tberAIVUN1duLA1F-o9A-L1S6i1ZGiMIynVJ2S3VG-OcLNbVJiUMAqeXT8v3amYqA_3HP3X17c37Lkey3iG3BBf-ZDTlyorfE0JztzlUvyGxpmPACy1faEnwkPlyDwm6QQHbfaOcnWVvlL2nrfydlvv9jZQnhjo2QAeP2bAVnmPp39mHLx7e6SXzBMi5DrG-0LFI"
         title="Heavy Cotton Oversized Tee"
         desc="Lifestyle wear featuring the Kalavya logo printed cleanly on premium heavy cotton apparel."
         overlayImage="/side.png"
-        overlayClassName="w-1/6 -mt-16 ml-2 object-contain z-10 opacity-90 drop-shadow-sm filter invert brightness-200"
+        overlayClassName="w-[20%] top-[38%] left-[50%] -translate-x-1/2 -translate-y-1/2 object-contain z-10 opacity-90 filter invert brightness-200"
       />
       <MockupCard
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzbx_Y4vzlUU7kjnRqR95hM2vPGqXGufauaUPsWIQBuXG3AoNeSq2e73VyIuRM6musl3WKFhvDxyQnD8pddt9LdBSX8daPK9Pw0zKTOskatzE9BXPOQJJ342QINU3fkslybU_eTUoW8iOlCKZddSwsQfGl6nswiYf_q9iktC3bA8V00k6Y9i2QfzHwP4T0FE95c0x03JrIK3tggkZQEJGWXrHkv0MAHzXDLuqDhq-6lXBDZxt_DqgARj-1HRUJp5bORUY2n8mQHfg"
         title="Artisanal Canvas Tote"
         desc="Everyday sustainable accessories blending geometric Mithila patterns with minimalist branding."
         overlayImage="/side.png"
-        overlayClassName="w-[18%] ml-12 mt-12 object-contain z-10 drop-shadow-sm mix-blend-multiply opacity-85 rotate-[-5deg]"
+        overlayClassName="w-[20%] top-[55%] left-[50%] -translate-x-1/2 -translate-y-1/2 object-contain z-10 drop-shadow-sm mix-blend-multiply opacity-85 rotate-[-2deg]"
       />
       <MockupCard
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZXIcY6JOvCF8-odhBCymXOy3IVUxX3lOUS043pJUgDsEbcAy-fAW44x8q6RqPLSFDoOBwe7_oIT69tB_aPGEl88FjFNue3j4_j48MTVy42aVN35H_hTDIuqpP5skHmGN0MEQymJmZvrAOrxbETlY4lR7ZZU-ii2EyMUbXgnSyzxQID6994wy2E6sIy4LW6nldLq_0zqKunqPkCFTConB2aRJjQlvT73Th-T6_xcHEF5WcoeOzr0tgZUtUwvJ1Qi2T988lRmQfNzs"
         title="Metropolitan Banner"
         desc="Out of home promotional signage utilizing brand colors to draw attention gracefully in urban environments."
         overlayImage="/side.png"
-        overlayClassName="w-3/5 -mt-6 ml-6 object-contain z-10 drop-shadow-lg opacity-90"
+        overlayClassName="w-[50%] top-[45%] left-[50%] -translate-x-1/2 -translate-y-1/2 object-contain z-10 drop-shadow-lg opacity-90"
       />
       <MockupCard
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkydh3-25K2t1Nr8cbBk28zB2iPkxBpwY7WbivNHri97XNXyD1j_mGh4uIHfRMhjo8PDdZo99HdPx3eOzlwLVkt7PWOc3B_EW6zB_SZKLqKTtEzh0O8OmGmBmrhRXxpK5zploOuV_R5jBwLKV8fyJpx1jXZbZtDPz5NUB6-XKSao87snXvg12YcIP0T4R25ieiB1vjusqtfkhVK7vh1FmQUFRltu8tA5hOmFIpc5Y0uTDZZ3is9VuURivZCk5hreT_P3S9kCwBuew"
@@ -569,7 +569,7 @@ const MockupsView = () => (
         title="Instagram Presence"
         desc="Social media grid layout maintaining the balance between traditional imagery and modern whitespace."
         overlayImage="/side.png"
-        overlayClassName="w-1/4 -ml-44 -mt-32 object-contain z-10 drop-shadow-sm mix-blend-multiply opacity-70"
+        overlayClassName="w-[22%] top-[35%] left-[45%] -translate-x-1/2 -translate-y-1/2 object-contain z-10 drop-shadow-sm mix-blend-multiply opacity-80"
       />
     </div>
   </motion.div>
