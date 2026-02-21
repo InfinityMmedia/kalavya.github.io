@@ -535,16 +535,22 @@ const MockupsView = () => (
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoW5SG_1PKPX0x-on7XCtRBF4kGpSYiG8r_XEcCZQLAZ2-xk22of-5HQFrSPhqZLaEFpQrfQdbf-S9RXP3gPR5TwDdlEWWIIxxiHT88sTap1-7H0LUeiGpBdzwlAA8ddctiPm-V1i00Y5f_tu27UEEfiEh8Y3QHwE1wDYY1lgkkC3SVifW5U6XS62y_5LnbZsCo2-3v7CoKyo07kKH0Wqk8KMsnJ0S61fvnOFHHQ2KpxU1y0_IJP_LPpv_VtOa3ANYxVgugNovxF4"
         title="Mobile Interface"
         desc="Digital experience on mobile devices highlighting the artisanal collection with clean typography and ample whitespace."
+        overlayImage="/top.png"
+        overlayClassName="w-1/3 object-contain z-10 drop-shadow-md"
       />
       <MockupCard
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIRkryHmBNKpYQR7PcY8ntJFb78F8pQGuETI0sT_15GJWkV4RmArSHGOdiQd_VMXEbzSdfKI1tberAIVUN1duLA1F-o9A-L1S6i1ZGiMIynVJ2S3VG-OcLNbVJiUMAqeXT8v3amYqA_3HP3X17c37Lkey3iG3BBf-ZDTlyorfE0JztzlUvyGxpmPACy1faEnwkPlyDwm6QQHbfaOcnWVvlL2nrfydlvv9jZQnhjo2QAeP2bAVnmPp39mHLx7e6SXzBMi5DrG-0LFI"
         title="Heavy Cotton Oversized Tee"
         desc="Lifestyle wear featuring the Kalavya logo printed cleanly on premium heavy cotton apparel."
+        overlayImage="/side.png"
+        overlayClassName="w-1/4 -mt-20 object-contain z-10 drop-shadow-lg mix-blend-multiply opacity-90"
       />
       <MockupCard
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzbx_Y4vzlUU7kjnRqR95hM2vPGqXGufauaUPsWIQBuXG3AoNeSq2e73VyIuRM6musl3WKFhvDxyQnD8pddt9LdBSX8daPK9Pw0zKTOskatzE9BXPOQJJ342QINU3fkslybU_eTUoW8iOlCKZddSwsQfGl6nswiYf_q9iktC3bA8V00k6Y9i2QfzHwP4T0FE95c0x03JrIK3tggkZQEJGWXrHkv0MAHzXDLuqDhq-6lXBDZxt_DqgARj-1HRUJp5bORUY2n8mQHfg"
         title="Artisanal Canvas Tote"
         desc="Everyday sustainable accessories blending geometric Mithila patterns with minimalist branding."
+        overlayImage="/top.png"
+        overlayClassName="w-1/5 ml-10 mt-10 object-contain z-10 drop-shadow-sm mix-blend-multiply opacity-80"
       />
       <MockupCard
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZXIcY6JOvCF8-odhBCymXOy3IVUxX3lOUS043pJUgDsEbcAy-fAW44x8q6RqPLSFDoOBwe7_oIT69tB_aPGEl88FjFNue3j4_j48MTVy42aVN35H_hTDIuqpP5skHmGN0MEQymJmZvrAOrxbETlY4lR7ZZU-ii2EyMUbXgnSyzxQID6994wy2E6sIy4LW6nldLq_0zqKunqPkCFTConB2aRJjQlvT73Th-T6_xcHEF5WcoeOzr0tgZUtUwvJ1Qi2T988lRmQfNzs"
@@ -565,16 +571,23 @@ const MockupsView = () => (
   </motion.div>
 );
 
-const MockupCard = ({ src, title, desc }: { src: string, title: string, desc: string }) => (
+const MockupCard = ({ src, title, desc, overlayImage, overlayClassName }: { src: string, title: string, desc: string, overlayImage?: string, overlayClassName?: string }) => (
   <div className="group cursor-pointer">
-    <div className="overflow-hidden rounded-lg bg-surface-light mb-6 aspect-[4/3] shadow-sm group-hover:shadow-md transition-shadow">
+    <div className="overflow-hidden rounded-lg bg-surface-light mb-6 aspect-[4/3] shadow-sm group-hover:shadow-md transition-shadow relative flex items-center justify-center">
       <img
         src={src}
         alt={title}
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
         loading="lazy"
         referrerPolicy="no-referrer"
       />
+      {overlayImage && (
+        <img
+          src={overlayImage}
+          alt={`${title} Overlay`}
+          className={`absolute pointer-events-none group-hover:scale-105 transition-transform duration-700 ${overlayClassName || ''}`}
+        />
+      )}
     </div>
     <div className="flex items-center justify-between mb-2">
       <h3 className="font-display text-2xl font-bold text-primary">{title}</h3>
