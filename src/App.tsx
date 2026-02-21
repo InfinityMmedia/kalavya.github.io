@@ -532,24 +532,34 @@ const MockupsView = () => (
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
       <MockupCard
-        src="https://images.unsplash.com/photo-1616423640778-28d1b53229bd?q=80&w=1500&auto=format&fit=crop"
-        title="Brand Stationery"
-        desc="Business cards, letterheads, and envelopes utilizing the primary heritage cream and deep umber palette."
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoW5SG_1PKPX0x-on7XCtRBF4kGpSYiG8r_XEcCZQLAZ2-xk22of-5HQFrSPhqZLaEFpQrfQdbf-S9RXP3gPR5TwDdlEWWIIxxiHT88sTap1-7H0LUeiGpBdzwlAA8ddctiPm-V1i00Y5f_tu27UEEfiEh8Y3QHwE1wDYY1lgkkC3SVifW5U6XS62y_5LnbZsCo2-3v7CoKyo07kKH0Wqk8KMsnJ0S61fvnOFHHQ2KpxU1y0_IJP_LPpv_VtOa3ANYxVgugNovxF4"
+        title="Mobile Interface"
+        desc="Digital experience on mobile devices highlighting the artisanal collection with clean typography and ample whitespace."
       />
       <MockupCard
-        src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?q=80&w=1500&auto=format&fit=crop"
-        title="Sustainable Packaging"
-        desc="Eco-friendly packaging featuring geometric Mithila patterns and the minimalist horizontal logo lockup."
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIRkryHmBNKpYQR7PcY8ntJFb78F8pQGuETI0sT_15GJWkV4RmArSHGOdiQd_VMXEbzSdfKI1tberAIVUN1duLA1F-o9A-L1S6i1ZGiMIynVJ2S3VG-OcLNbVJiUMAqeXT8v3amYqA_3HP3X17c37Lkey3iG3BBf-ZDTlyorfE0JztzlUvyGxpmPACy1faEnwkPlyDwm6QQHbfaOcnWVvlL2nrfydlvv9jZQnhjo2QAeP2bAVnmPp39mHLx7e6SXzBMi5DrG-0LFI"
+        title="Heavy Cotton Oversized Tee"
+        desc="Lifestyle wear featuring the Kalavya logo printed cleanly on premium heavy cotton apparel."
       />
       <MockupCard
-        src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1500&auto=format&fit=crop"
-        title="Digital Experience"
-        desc="Mobile commerce interface highlighting the artisanal collection with clean typography and ample whitespace."
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzbx_Y4vzlUU7kjnRqR95hM2vPGqXGufauaUPsWIQBuXG3AoNeSq2e73VyIuRM6musl3WKFhvDxyQnD8pddt9LdBSX8daPK9Pw0zKTOskatzE9BXPOQJJ342QINU3fkslybU_eTUoW8iOlCKZddSwsQfGl6nswiYf_q9iktC3bA8V00k6Y9i2QfzHwP4T0FE95c0x03JrIK3tggkZQEJGWXrHkv0MAHzXDLuqDhq-6lXBDZxt_DqgARj-1HRUJp5bORUY2n8mQHfg"
+        title="Artisanal Canvas Tote"
+        desc="Everyday sustainable accessories blending geometric Mithila patterns with minimalist branding."
       />
       <MockupCard
-        src="https://images.unsplash.com/photo-1563203369-26f2e4a5ccf7?q=80&w=1500&auto=format&fit=crop"
-        title="Retail Signage"
-        desc="In-store promotional materials and tags using the slate teal accent color to draw attention."
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZXIcY6JOvCF8-odhBCymXOy3IVUxX3lOUS043pJUgDsEbcAy-fAW44x8q6RqPLSFDoOBwe7_oIT69tB_aPGEl88FjFNue3j4_j48MTVy42aVN35H_hTDIuqpP5skHmGN0MEQymJmZvrAOrxbETlY4lR7ZZU-ii2EyMUbXgnSyzxQID6994wy2E6sIy4LW6nldLq_0zqKunqPkCFTConB2aRJjQlvT73Th-T6_xcHEF5WcoeOzr0tgZUtUwvJ1Qi2T988lRmQfNzs"
+        title="Metropolitan Banner"
+        desc="Out of home promotional signage utilizing brand colors to draw attention gracefully in urban environments."
+      />
+      <MockupCard
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkydh3-25K2t1Nr8cbBk28zB2iPkxBpwY7WbivNHri97XNXyD1j_mGh4uIHfRMhjo8PDdZo99HdPx3eOzlwLVkt7PWOc3B_EW6zB_SZKLqKTtEzh0O8OmGmBmrhRXxpK5zploOuV_R5jBwLKV8fyJpx1jXZbZtDPz5NUB6-XKSao87snXvg12YcIP0T4R25ieiB1vjusqtfkhVK7vh1FmQUFRltu8tA5hOmFIpc5Y0uTDZZ3is9VuURivZCk5hreT_P3S9kCwBuew"
+        title="Landing Page Design"
+        desc="Hero section for the web presence, showing the logo lockups effectively framing the digital narrative."
+      />
+      <MockupCard
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoU4xqYczAk5Vo0O64SkIOFlR0i2OAyagHwimznfYHremC3mgklDeTDx8i0gPXrU6N9Y00V4myUB0ZyxpPfKHLfn-bfpBWjnqHDNbSg2NVkjSOD3rZL-xJOZ8VoCCV_-njdU9Ra3YNCfIxAEXaflmswoanZ59J8OlqNWVkbQigZNNZU70OtAGOW3ajMfwe7HvI00GoGt-2leZbGh6mWRr6hXF2nQRN9dkjzgi6lf9IzI4e5iwoK-iTAgAP3nmSDo1LZK42A93u9Tg"
+        title="Instagram Presence"
+        desc="Social media grid layout maintaining the balance between traditional imagery and modern whitespace."
       />
     </div>
   </motion.div>
