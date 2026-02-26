@@ -41,7 +41,7 @@ const Navbar = ({ currentSection, setSection }: { currentSection: Section, setSe
               onClick={() => setSection('strategy')}
               className="flex items-center gap-4 group text-left"
             >
-              <img src="/side.png" className="h-12 w-auto object-contain" alt="Kalavya.Co Logo" />
+              <img src="/main-l.png" className="h-12 w-auto object-contain" alt="Kalavya.Co Logo" />
             </button>
           </div>
 
@@ -621,7 +621,7 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center gap-4 mb-4 md:mb-0">
-          <img src="/side.png" className="h-10 w-auto object-contain opacity-80" alt="Kalavya.Co Footer Logo" />
+          <img src="/main-l.png" className="h-10 w-auto object-contain opacity-80" alt="Kalavya.Co Footer Logo" />
           <div className="h-8 w-px bg-primary/20 hidden sm:block"></div>
           <p className="text-xs text-primary/50 uppercase tracking-widest font-subheading leading-none hidden sm:block">
             Internal Brand Document
