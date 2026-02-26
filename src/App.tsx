@@ -272,7 +272,7 @@ const LogoSystemView = () => (
           <div className="bg-white rounded-lg shadow-sm border border-primary/10 p-12 relative flex-1">
             <span className="absolute top-4 left-4 text-xs font-mono font-bold text-secondary uppercase tracking-widest bg-secondary/10 px-2 py-1 rounded">02. Secondary Horizontal</span>
             <div className="flex items-center justify-center min-h-[220px] w-full mt-6">
-              <img src="/side 2.png" alt="Secondary Horizontal Lockup" className="max-w-full h-auto max-h-[160px] object-contain" />
+              <img src="/main-l.png" alt="Secondary Horizontal Lockup" className="max-w-full h-auto max-h-[160px] object-contain" />
             </div>
           </div>
         </div>
@@ -321,7 +321,7 @@ const LogoSystemView = () => (
                 <p className="text-xs text-gray-500">30mm width minimum</p>
               </div>
               <div className="w-[113px] bg-gray-50 p-3 border border-dashed border-gray-300 flex items-center justify-center">
-                <img src="/side 2.png" alt="Minimal Print Logo" className="w-full object-contain" />
+                <img src="/main-l.png" alt="Minimal Print Logo" className="w-full object-contain" />
               </div>
             </div>
           </div>
