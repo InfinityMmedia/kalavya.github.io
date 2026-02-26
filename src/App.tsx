@@ -264,9 +264,9 @@ const LogoSystemView = () => (
         </div>
         <div className="lg:col-span-2 flex flex-col gap-10">
           <div className="bg-white rounded-lg shadow-sm border border-primary/10 p-12 relative flex-1">
-            <span className="absolute top-4 left-4 text-xs font-mono font-bold text-secondary uppercase tracking-widest bg-secondary/10 px-2 py-1 rounded">01. Primary Horizontal</span>
+            <span className="absolute top-4 left-4 text-xs font-mono font-bold text-secondary uppercase tracking-widest bg-secondary/10 px-2 py-1 rounded">01. Primary Logo</span>
             <div className="flex items-center justify-center min-h-[220px] w-full mt-6">
-              <img src="/side.png" alt="Horizontal Logo Lockup" className="max-w-full h-auto max-h-[160px] object-contain" />
+              <img src="/main-logo.jpg" alt="Primary Logo Lockup" className="max-w-full h-auto max-h-[160px] object-contain mix-blend-multiply" />
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-sm border border-primary/10 p-12 relative flex-1">
@@ -294,7 +294,7 @@ const LogoSystemView = () => (
               <div className="absolute -right-8 bottom-0 h-8 w-8 flex items-center justify-center border-r border-b border-secondary text-xs font-mono text-secondary">x</div>
               <div className="absolute -bottom-8 right-0 h-8 w-8 flex items-center justify-center border-r border-b border-secondary text-xs font-mono text-secondary">x</div>
               <div className="flex items-center justify-center w-full max-w-[200px]">
-                <img src="/side.png" alt="Clear Space Lockup Minimal" className="w-full h-auto object-contain" />
+                <img src="/main-logo.jpg" alt="Clear Space Lockup Minimal" className="w-full h-auto object-contain mix-blend-multiply" />
               </div>
             </div>
             <div className="absolute bottom-4 right-4 text-xs font-mono text-gray-400">x = height of 'K'</div>
@@ -312,7 +312,7 @@ const LogoSystemView = () => (
                 <p className="text-xs text-gray-500">120px width minimum</p>
               </div>
               <div className="w-[120px] bg-gray-50 p-3 border border-dashed border-gray-300 flex items-center justify-center">
-                <img src="/side.png" alt="Minimal Digital Logo" className="w-full object-contain" />
+                <img src="/main-logo.jpg" alt="Minimal Digital Logo" className="w-full object-contain mix-blend-multiply" />
               </div>
             </div>
             <div className="flex items-center justify-between">
@@ -512,6 +512,18 @@ const DontCard = ({ children, label, className = "bg-gray-100" }: { children: Re
   </div>
 );
 
+const galleryImages = [
+  "/gallery/Gemini_Generated_Image_33kef733kef733ke.png",
+  "/gallery/Gemini_Generated_Image_6427sk6427sk6427.png",
+  "/gallery/Gemini_Generated_Image_bcsk43bcsk43bcsk.png",
+  "/gallery/Gemini_Generated_Image_koeos2koeos2koeo.png",
+  "/gallery/Gemini_Generated_Image_oues53oues53oues.png",
+  "/gallery/Gemini_Generated_Image_rgj9xkrgj9xkrgj9.png",
+  "/gallery/Gemini_Generated_Image_vdn9u7vdn9u7vdn9.png",
+  "/gallery/Gemini_Generated_Image_x22d70x22d70x22d.png",
+  "/gallery/Gemini_Generated_Image_z40c3rz40c3rz40c.png"
+];
+
 const MockupsView = () => (
   <motion.div
     initial={{ opacity: 0, scale: 0.98 }}
@@ -530,7 +542,7 @@ const MockupsView = () => (
       </p>
     </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-16">
       <MockupCard
         src="/mock1.png"
         title="Brand Identity Showcase"
@@ -551,6 +563,29 @@ const MockupsView = () => (
         title="Marketing & Environment"
         desc="Extending the minimalist brand footprint across varied physical touchpoints."
       />
+    </div>
+
+    {/* Gallery Section */}
+    <div className="mt-20 border-t border-primary/10 pt-16">
+      <div className="mb-10 text-center">
+        <h2 className="text-3xl font-display font-bold text-primary mb-4">Gallery View</h2>
+        <p className="text-md text-primary/70 font-body max-w-2xl mx-auto">
+          Extended explorations and conceptual applications showcasing the brand identity in varying environments and compositions.
+        </p>
+      </div>
+
+      <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+        {galleryImages.map((src, idx) => (
+          <div key={idx} className="break-inside-avoid overflow-hidden rounded-2xl border border-primary/10 shadow-sm hover:shadow-md transition-shadow group">
+            <img
+              src={src}
+              alt={`Gallery concept ${idx + 1}`}
+              className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   </motion.div>
 );
